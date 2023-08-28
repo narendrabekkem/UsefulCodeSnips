@@ -91,3 +91,28 @@ gs.info(diff);
 *** Script: 79200
 *** Script: 22:00:00
 
+
+//check if minimum difference of 5 days between two dates
+var start= new GlideDateTime('2023-08-22 23:21:17');
+var end= new GlideDateTime('2023-08-29 21:21:17');
+//check start date is greater than current time
+var timenow=new GlideDateTime(); 
+gs.info('Start date is greater than current time?: '+ start.after(timenow));
+//check if minimum difference of 5 days between two dates
+start.addDaysUTC(5);
+
+if (start.after(end))
+{
+    gs.info('startdate +5days is greater than enddate');
+}
+else if (start.before(end))
+{
+    gs.info('startdate +5days is ealier than enddate')
+}
+
+//Output
+*** Script: Time of execution:2023-08-28 18:36:28
+ TimeZone of the session:IST
+*** Script: yyyy-MM-dd HH:mm:ss
+*** Script: Start date is greater than current time?: false
+*** Script: startdate +5days is ealier than enddate
