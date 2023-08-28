@@ -9,7 +9,7 @@ gr.short_description='blah';
 gs.info('Attribute "Tree Picker" = '+gr.assignment_group.getAttribute('tree_picker'));
 //GlideRecord Method return true if any field value changed on current GlideRecord
 gs.info(gr.changes());
-//GlideRecord Method returns all field values on gliderecord
+//GlideRecord Method returns all glide elements on gliderecord
 gs.info(gr.getFields());
 //GlideRecord Method returns GlideRecord's table
 gs.info(gr.getTableName());
