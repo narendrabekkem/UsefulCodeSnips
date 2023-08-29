@@ -74,7 +74,7 @@ gs.info("Time of execution:"+ new GlideDateTime()+"\n TimeZone of the session:"+
 var dt1= new GlideDateTime('2023-08-28 23:21:17');
 var dt2= new GlideDateTime('2023-08-29 21:21:17');
 
-//difference between two dates
+//difference between two dates represented in "yyyy-mm-dd hh:mm:ss" format starting from "1970-01-01 00:00:00"
 var diff=GlideDateTime.subtract(dt1,dt2);
 gs.info(diff);
 
